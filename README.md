@@ -1,6 +1,6 @@
-# Teste Usuários API
+# API de Usuários de Teste
 
-API desenvolvida em **Java com Spring Boot** para o teste técnico, com arquitetura em camadas inspirada em **DDD**, autenticação básica, documentação Swagger e integração com banco SQL Server.
+API desenvolvida em Java com Spring Boot para o teste técnico, com arquitetura em camadas inspirada em DDD, autenticação básica, documentação Swagger e integração com banco SQL Server.
 
 ## Tecnologias utilizadas
 
@@ -14,26 +14,26 @@ API desenvolvida em **Java com Spring Boot** para o teste técnico, com arquitet
 
 ## Estrutura do projeto
 
-O projeto foi organizado em camadas para manter separação de responsabilidades:
+O projeto foi organizado em camadas para manter a separação de responsabilidades:
 
 - `api` → controllers
 - `application` → services, DTOs e mappers
 - `domain` → entidades
-- `infrastructure` → repositories
+- `infrastructure` → repositórios
 - `config` → segurança, CORS e Swagger
 
-## Funcionalidades implementadas
+## Funcionalidades
 
 - Cadastro de usuário
 - Busca de usuário por ID
 - Listagem de usuários
 - Listagem por entidade mapeada
 - Listagem por stored procedure
-- Basic Authentication
+- Autenticação básica
 - Swagger para documentação e testes
 - CORS para integração com frontend Angular
 
-## Endpoints principais
+## Principais endpoints
 
 ### Cadastrar usuário
 `POST /usuarios`
@@ -52,15 +52,14 @@ O projeto foi organizado em camadas para manter separação de responsabilidades
 
 ## Autenticação
 
-A API utiliza **Basic Auth**.
+A API utiliza autenticação básica.
 
-Usuário de teste:
+**Usuário de teste:**
 - usuário: `admin`
 - senha: `123`
 
 ## Swagger
 
-Ao subir a aplicação, acessar:
+Ao subir a aplicação, acesse:
 
-```bash
-http://localhost:8080/swagger-ui.html
+`http://localhost:8080/swagger-ui.html`
